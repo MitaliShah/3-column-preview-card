@@ -47,7 +47,7 @@
         min-height: 100vh;
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
     }
 
     .container {
@@ -57,9 +57,6 @@
 
     .card-wrapper {
         padding: 3rem;
-        /* display: grid;
-        grid-template-rows: repeat(3, 1fr); */
-        overflow: hidden;        
     }
 
     .learn-btn {
@@ -96,15 +93,17 @@
     }
 
     .card-wrapper:nth-child(1) {
-        background-color: var(--bright-orange)
+        background-color: var(--bright-orange);
+        border-radius: 0.5rem 0.5rem 0 0;
     }
 
     .card-wrapper:nth-child(2) {
-        background-color: var(--dark-cyan)
+        background-color: var(--dark-cyan);
     }
 
     .card-wrapper:nth-child(3) {
-        background-color: var(--very-dark-cyan)
+        background-color: var(--very-dark-cyan);
+        border-radius: 0 0 0.5rem 0.5rem;
     }
 
     .card-wrapper:nth-child(1) > button {
@@ -148,5 +147,14 @@
             background-color: var(--very-dark-cyan);
         }
 
+        .card-wrapper:nth-child(1) {
+            background-color: var(--bright-orange);
+            border-radius: 0.5rem 0 0 0.5rem;
+        }
+    
+        .card-wrapper:nth-child(3) {
+            background-color: var(--very-dark-cyan);
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
     }
 
